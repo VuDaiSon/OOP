@@ -10,7 +10,7 @@ public class CircleComputation {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the radius: ");
-        double radius = sc.nextInt();
+        double radius = sc.nextDouble();
         double diameter = radius * 2;
         double circumference = radius * 2 * Math.PI;
         double area = Math.pow(radius,2) * Math.PI;
