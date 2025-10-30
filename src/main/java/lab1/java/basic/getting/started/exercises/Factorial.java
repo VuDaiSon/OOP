@@ -1,4 +1,4 @@
-package lab1.java.basic;
+package lab1.java.basic.getting.started.exercises;
 
 import java.math.BigInteger;
 import java.util.Scanner;
@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Factorial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter n: ");
+        System.out.print("Enter n: ");
         BigInteger n = sc.nextBigInteger();
         BigInteger factorial = BigInteger.ONE;
         BigInteger i = BigInteger.ONE;
