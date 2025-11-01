@@ -24,7 +24,7 @@ public class PensionContributionCalculator {
         final double EMPLOYEE_RATE_65_ABOVE = 0.05;
         final double EMPLOYER_RATE_65_ABOVE = 0.075;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the salary: ");
+        System.out.print("Enter the monthly salary: $");
         int salary  = sc.nextInt();
         System.out.print("Enter the age: ");
         int age = sc.nextInt();

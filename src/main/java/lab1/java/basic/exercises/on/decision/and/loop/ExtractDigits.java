@@ -11,6 +11,9 @@ public class ExtractDigits {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your number you wanna reverse its order: ");
         BigInteger n = sc.nextBigInteger();
+        if(n.compareTo(BigInteger.ZERO) <= 0){
+            System.out.print("Please enter a valid integer!");
+        }
         while (n.compareTo(BigInteger.ZERO) >0) {
             BigInteger digit = n.remainder(BigInteger.TEN);
             n = n.divide(BigInteger.TEN);
