@@ -2,12 +2,15 @@ package lab2.java.basic.exercises.on.string.andchar.operations;
 
 import java.util.Scanner;
 
-// Write a method called countVowels() (with prototype int countVowels(String inStr))
-// that counts the number of vowels (a, e, i, o, u, A, E, I, O, U) contained in the string inStr.
-// Write a method called countDigits() (with prototype int countDigits(String inStr))
-// that counts the number of digits (0 − 9) contained in the String inStr. Write a method called
-//testCountVowelsDigits(), which prompts the user for a String, counts the number of vowels
-//and digits contained in the string, and prints the counts and the percentages (rounded to 2 decimal places).
+/**
+ Write a method called countVowels() (with prototype int countVowels(String inStr))
+ that counts the number of vowels (a, e, i, o, u, A, E, I, O, U) contained in the string inStr.
+ Write a method called countDigits() (with prototype int countDigits(String inStr))
+ that counts the number of digits (0 − 9) contained in the String inStr. Write a method called
+testCountVowelsDigits(), which prompts the user for a String, counts the number of vowels
+and digits contained in the string, and prints the counts and the percentages (rounded to 2 decimal places).
+ */
+
 public class CountVowelsDigits {
     public static void main(String[] args) {
         testCountVowelsDigits();
