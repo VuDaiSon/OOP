@@ -2,9 +2,12 @@ package lab1.java.basic.input.decision.and.loop;
 
 import java.util.Scanner;
 
-// Write a program that prompts user for the mark (between 0 − 100 in int) of 3 students
-// computes the average (in double); and prints the result rounded to 2 decimal places
-// Your program needs to perform input validation.
+/**
+ Write a program that prompts user for the mark (between 0 − 100 in int) of 3 students
+ computes the average (in double); and prints the result rounded to 2 decimal places
+ Your program needs to perform input validation
+ */
+
 public class AverageWithInputValidation {
     public static void main(String[] args) {
         final int NUM_STUDENT = 3;
