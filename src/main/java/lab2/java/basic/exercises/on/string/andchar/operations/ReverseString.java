@@ -1,11 +1,13 @@
 package lab2.java.basic.exercises.on.string.andchar.operations;
 
 import java.util.Scanner;
+/**
+ Write a method called reverseString(String inStr) (with prototype String reverseString(String inStr))
+ which reverses the string inStr by extracting and processing each character.
+ Write a method called testReverseString() which prompts user for a string,
+ and prints the reverse of the string using the method reverseString().
+ */
 
-// Write a method called reverseString(String inStr) (with prototype String reverseString(String inStr))
-// which reverses the string inStr by extracting and processing each character.
-// Write a method called testReverseString() which prompts user for a string,
-// and prints the reverse of the string using the method reverseString().
 public class ReverseString {
 
     public static String reverseString(String inStr) {
