@@ -1,16 +1,16 @@
 package lab1.java.basic.input.decision.and.loop;
 
-//Both the employer and the employee are mandated to contribute a certain percentage of the
-//employee’s salary towards the employee’s pension fund. The rate is tabulated as follows(I show it in code)
-//However, the contribution is subjected to a salary ceiling of $6, 000. In other words, if an
-//employee earns $6, 800, only $6, 000 attracts employee’s and employer’s contributions, the
-//remaining $800 does not.
-//Write a program called PensionContributionCalculator that reads the monthly salary
-//and age (in int) of an employee. Your program shall calculate the employee’s, employer’s
-//and total contributions (in double); and print the results rounded to 2 decimal places. For
-//examples,
-
 import java.util.Scanner;
+/**
+ * Both the employer and the employee are mandated to contribute a certain percentage of the
+employee’s salary towards the employee’s pension fund. The rate is tabulated as follows(I show it in code)
+However, the contribution is subjected to a salary ceiling of $6, 000. In other words, if an
+employee earns $6, 800, only $6, 000 attracts employee’s and employer’s contributions, the
+remaining $800 does not.
+Write a program called PensionContributionCalculator that reads the monthly salary
+and age (in int) of an employee. Your program shall calculate the employee’s, employer’s
+and total contributions (in double); and print the results rounded to 2 decimal places.
+*/
 
 public class PensionContributionCalculator {
     public static void main(String[] args) {
