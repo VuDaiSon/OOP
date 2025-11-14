@@ -1,10 +1,11 @@
 package lab1.java.basic.input.decision.and.loop;
 
 import java.util.Scanner;
-
-// Based on the previous PensionContributionCalculator
-// write a program called PensionContributionCalculatorWithSentinel
-// which shall repeat the calculations until user enter −1 for the salary.
+/**
+ Based on the previous PensionContributionCalculator
+ write a program called PensionContributionCalculatorWithSentinel
+ which shall repeat the calculations until user enter −1 for the salary.
+ */
 public class PensionContributionCalculatorWithSentinel {
     public static void main(String[] args) {
         final int SENTIAL = -1;
