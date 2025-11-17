@@ -1,12 +1,13 @@
 package lab1.java.basic.exercises.on.decision.and.loop;
-//Write a program called ComputePI to compute the value of π, using the following series
-//expansion. Use the maximum denominator (MAX DENOMINATOR) as the terminating
-//condition. Try MAX DENOMINATOR of 1000, 10000, 100000, 1000000 and compare the PI
-//obtained. Is this series suitable for computing PI ? Why?
-
 import java.util.Scanner;
 
-//Hints: Add to sum if the denominator % 4 is 1, and subtract from sum if it is 3.
+/**
+Write a program called ComputePI to compute the value of π, using the following series
+expansion. Use the maximum denominator (MAX DENOMINATOR) as the terminating
+condition. Try MAX DENOMINATOR of 1000, 10000, 100000, 1000000 and compare the PI
+obtained. Is this series suitable for computing PI ? Why?
+Hints: Add to sum if the denominator % 4 is 1, and subtract from sum if it is 3.
+ */
 public class ComputePI {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
