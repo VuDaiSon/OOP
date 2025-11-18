@@ -1,6 +1,8 @@
 package lab1.java.basic.exercises.on.decision.and.loop;
-//Write a program called Fibonacci to print the first 20 Fibonacci numbers F(n)
-// where F(n) = F(n–1) + F(n–2) and F(1) = F(2) = 1.
+/**
+ Write a program called Fibonacci to print the first 20 Fibonacci numbers F(n)
+ where F(n) = F(n–1) + F(n–2) and F(1) = F(2) = 1.
+ */
 public class Fibonacci {
     public static void main(String[] args) {
         int fn;
