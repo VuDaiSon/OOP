@@ -1,9 +1,11 @@
 package lab1.java.basic.exercises.on.decision.and.loop;
 
-// a program called HarmonicSum to compute the sum of a harmonic series, where n = 50000
-// The program shall compute the sum from left-to-right as well as from the right-to-left
-// Are the two sums the same?Obtain the absolute difference between these two sums and explain
-// the difference. Which sum is more accurate?
+/**
+ a program called HarmonicSum to compute the sum of a harmonic series, where n = 50000
+ The program shall compute the sum from left-to-right as well as from the right-to-left
+ Are the two sums the same?Obtain the absolute difference between these two sums and explain
+ the difference. Which sum is more accurate?
+ */
 public class HarmonicSum {
     public static void main(String[] args) {
         final int MAXDENOMINATOR = 50000;
