@@ -2,9 +2,11 @@ package lab1.java.basic.getting.started.exercises;
 
 import java.util.Scanner;
 
-// a program called PrintNumberInWord which prints ”ONE”, ”TWO”,... , ”NINE”,
-// ”OTHER” if the int variable ”number” is 1, 2, ..., 9, or other, respectively.
-// Use (a) a ”nested- if” statement; (b) a ”switch-case-default” statement.
+/**
+ a program called PrintNumberInWord which prints ”ONE”, ”TWO”,... , ”NINE”,
+ ”OTHER” if the int variable ”number” is 1, 2, ..., 9, or other, respectively.
+ Use (a) a ”nested- if” statement; (b) a ”switch-case-default” statement.
+ */
 public class PrintNumberInWord {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
