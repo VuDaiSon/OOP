@@ -3,7 +3,9 @@ package lab1.java.basic.getting.started.exercises;
 import java.math.BigInteger;
 import java.util.Scanner;
 
-//The following program calculates and prints the factorial of n entered from the keyboard.
+/**
+The following program calculates and prints the factorial of n entered from the keyboard.
+ */
 public class Factorial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
