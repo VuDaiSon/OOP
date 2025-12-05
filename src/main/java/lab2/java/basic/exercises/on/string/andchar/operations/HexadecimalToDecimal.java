@@ -3,39 +3,41 @@ package lab2.java.basic.exercises.on.string.andchar.operations;
 import java.util.Scanner;
 
 /**
- *
+ * Write a method called hexadecimalToDecimal() (with prototype int hexadecimalToDeci-mal(String hexStr))
+ * to convert an input hexadecimal string into its equivalent decimal num-ber.
+ * Write a method called testHexadecimalToDecimal(), which prompts user for a hexadec-imal string
+ * and convert the input hexadecimal string into its equivalent decimal number.
  */
 public class HexadecimalToDecimal {
     public static void main(String[] args) {
-        testHexadecimalToBinary();
+        test();
     }
-    public static String HexadecimalToBinary(String hexStr){
-        StringBuilder result = new StringBuilder();
+    public static int hexadecimalToDecimal(String hexStr){
         hexStr = hexStr.toUpperCase();
-        String[] HEX_BITS ={ "0000", "0001", "0010", "0011",
-                "0100", "0101", "0110", "0111",
-                "1000", "1001", "1010", "1011",
-                "1100", "1101", "1110", "1111" };
+        int result =0;
         for(int i = 0; i<hexStr.length(); i++){
             char ch = hexStr.charAt(i);
-            int index;
-            if(ch <= '9' && ch >= '0'){
-                index = ch - '0';
-            } else if (ch >= 'A' && ch <= 'F') {
-                index = ch - 'A' + 10;
-            }else {
-                return " Invalid hex character: " + ch;
+            int value;
+            if(ch >= '0' && ch <= '9'){
+                value = ch - '0';
             }
-            result.append(HEX_BITS[index]).append(" ");
-
+            else if(ch >= 'A' && ch <= 'F'){
+                value = ch - 'A' + 10;
+            }else {
+return -1;            }
+            result = result * 16 + value;
         }
-        return result.toString();
+        return result;
     }
-    public static void testHexadecimalToBinary(){
+    public static void test(){
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a Hexadecimal string: ");
         String hexStr = in.next();
-        String binary = HexadecimalToBinary(hexStr);
-        System.out.println("The equivalent binary for hexadecimal \"" + hexStr + "\" is: " + binary);
-    }
+        int decimal = hexadecimalToDecimal(hexStr);
+        if(decimal == -1){
+            System.out.println("error: invalid hexadecimal string \"" + hexStr + "\"");
+        }
+        else {
+        System.out.println("The equivalent decimal number for hexadecimal \"" + hexStr + "\" is: " + decimal);
+    }}
 }
