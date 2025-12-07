@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 /**
  * Write a method called binaryToDecimal() (with prototype int binaryToDecimal
- * (String bin-Str)) to convert an input binary string into its equivalent decimal number.
+ * (String binStr)) to convert an input binary string into its equivalent decimal number.
  * Write a method called testBinaryToDecimal(), which prompts user for a binary string,
  * and convert the input binary string into its equivalent decimal number.
  */
