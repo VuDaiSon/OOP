@@ -3,7 +3,10 @@ package lab2.java.basic.array;
 import java.util.Scanner;
 
 /**
- *
+ * Write a method called hexadecimalToBinary() (with prototype String hexadecimalToBi-
+ * nary(String hexStr)) to convert an input hexadecimal string into its equivalent binary string.
+ * Write a method called testHexadecimalToBinary() that prompts user for
+ * a hexadecimal string and print its equivalent binary string.
  */
 public class HexadecimalToBinary {
     public static void main(String[] args) {
