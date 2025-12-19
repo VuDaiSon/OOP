@@ -10,19 +10,45 @@ import java.util.Scanner;
  */
 public class RadixNToDecimal {
     public static void main(String[] args) {
-        test();
+        testRadixToDecimal();
     }
-    public static int radixToDecimal(String radixStr){
-        int result=0;
+    public static int radixToDecimal(String radixStr, int radix){
+        radixStr = radixStr.toUpperCase();
+        int result = 0;
         for(int i = 0; i < radixStr.length(); i++){
             char c = radixStr.charAt(i);
+            int value;
+            if(c <= '9' && c >= '0'){
+                value = c - '0';
+            } else if (c >= 'A' && c<= 'Z') {
+                value = c - 'A' + 10;
+            }
+            else {
+                return -1;
+            }
+            if (value >= radix) {
+                return -1;
+            }
+            result = result * radix + value;
         }
         return result;
     }
-    public static void test(){
+    public static void testRadixToDecimal() {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter the radix number: ");
-        String radixStr = in.next();
-        int result = radixToDecimal(radixStr);
+
+        System.out.print("Enter a number string: ");
+        String str = in.next();
+
+        System.out.print("Enter the radix: ");
+        int radix = in.nextInt();
+
+        int decimal = radixToDecimal(str, radix);
+
+        if (decimal == -1) {
+            System.out.println("error: invalid number string \"" + str + "\" for radix " + radix);
+        } else {
+            System.out.println("The equivalent decimal number is: " + decimal);
+        }
     }
+
 }
