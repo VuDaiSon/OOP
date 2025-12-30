@@ -8,6 +8,7 @@ public class PrintArray {
     }
     public int[] createArray(Scanner in){
         System.out.println("Enter the number of item s :");
+        return null;
     }
     public static void test(){
 
