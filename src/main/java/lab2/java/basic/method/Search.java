@@ -3,10 +3,10 @@ package lab2.java.basic.method;
 import java.util.Scanner;
 
 /**
- * Write a boolean method called contains(), which takes an array of int and an int; and returns
- * true if the array contains the given int.
+ * Write a method called test search(), which takes an array of int and an int; and returns the
+ * array index if the array contains the given int; or −1 otherwise.
  */
-public class Contains {
+public class Search {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.print("Enter number of elements: ");
@@ -18,19 +18,18 @@ public class Contains {
         }
         System.out.print("Enter key to search: ");
         int key = in.nextInt();
-        if(contains(array, key)){
+        if(search(array, key) != -1){
             System.out.println("Contains " + key + "? " + "true");
-        }
-        else {
+        }else{
             System.out.println("Contains " + key + "? " + "not found");
         }
     }
-    public static boolean contains(int[] array, int key){
-        for (int j : array) {
-            if (key == j) {
-                return true;
+    public static int search(int[] array, int key){
+        for (int i : array){
+            if(i == key){
+                return key;
             }
         }
-        return false;
+        return -1;
     }
 }
