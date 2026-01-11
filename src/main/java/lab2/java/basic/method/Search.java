@@ -18,16 +18,17 @@ public class Search {
         }
         System.out.print("Enter key to search: ");
         int key = in.nextInt();
-        if(search(array, key) != -1){
-            System.out.println("Contains " + key + "? " + "true");
+        int index = search(array, key);
+        if(index != -1){
+            System.out.println("Found " + key + " at index " + index);
         }else{
             System.out.println("Contains " + key + "? " + "not found");
         }
     }
     public static int search(int[] array, int key){
-        for (int i : array){
-            if(i == key){
-                return key;
+        for (int i=0; i< array.length; i++){
+            if(array[i] == key){
+                return i;
             }
         }
         return -1;
