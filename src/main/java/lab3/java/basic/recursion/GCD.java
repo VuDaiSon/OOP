@@ -1,4 +1,4 @@
-package lab3.java.basic.Recursion;
+package lab3.java.basic.recursion;
 
 import java.util.Scanner;
 
