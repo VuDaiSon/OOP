@@ -3,7 +3,7 @@ package lab4.oop.excersice.classes.account;
 public class Account {
     private String id;
     private String name;
-    private int balance;
+    private int balance=0;
     public Account(String id, String name){
         this.id = id;
         this.name = name;
@@ -35,7 +35,7 @@ public class Account {
         return balance;
     }
     public int transferTo(Account another, int amount){
-        if(amount<balance){
+        if(amount<=balance){
             this.balance -= amount;
             another.balance += amount;
         }
