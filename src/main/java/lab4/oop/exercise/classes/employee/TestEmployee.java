@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.employee;
+package lab4.oop.exercise.classes.employee;
 
 public class TestEmployee {
     public static void main(String[] args) {

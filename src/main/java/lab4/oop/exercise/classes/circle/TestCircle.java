@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.circle;
+package lab4.oop.exercise.classes.circle;
 
 public class TestCircle {
     public static void main(String[] args) {

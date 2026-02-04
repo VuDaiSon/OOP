@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.invoiceItem;
+package lab4.oop.exercise.classes.invoiceItem;
 
 public class InvoiceItemTest {
     public static void main(String[] args) {

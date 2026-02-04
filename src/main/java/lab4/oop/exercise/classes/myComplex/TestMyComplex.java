@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.myComplex;
+package lab4.oop.exercise.classes.myComplex;
 
 public class TestMyComplex {
     public static void main(String[] args) {

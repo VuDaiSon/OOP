@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.account;
+package lab4.oop.exercise.classes.account;
 
 public class TestAccount {
     public static void main(String[] args) {

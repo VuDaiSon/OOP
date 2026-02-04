@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.rectangle;
+package lab4.oop.exercise.classes.rectangle;
 
 public class TestRectangle {
     public static void main(String[] args) {

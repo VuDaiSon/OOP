@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.myPolynomial;
+package lab4.oop.exercise.classes.myPolynomial;
 
 
 public class TestMain {

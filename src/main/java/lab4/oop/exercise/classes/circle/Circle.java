@@ -1,4 +1,4 @@
-package lab4.oop.excersice.classes.circle;
+package lab4.oop.exercise.classes.circle;
 
 
 public class Circle {
