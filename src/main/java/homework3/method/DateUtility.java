@@ -27,10 +27,11 @@ public class DateUtility {
     // month: 1 (Jan) - 12 (Dec)
     // day: 1 - 28|29|30|31 depending on year and month
     public static boolean isValidDate(int year, int month, int day) {
-        int maxDay = daysInMonths[month - 1];
         if (!(0 < year && year < 10000 && 0 < month && month < 13 && 0 < day)) {
-            return true;
-        }  if (month == 2 && isLeapYear(year)) {
+            return false;
+        }
+        int maxDay = daysInMonths[month - 1];
+        if (month == 2 && isLeapYear(year)) {
             maxDay = 29;
         }
         return day <=maxDay;
