@@ -57,19 +57,23 @@ public class MyLine {
         begin.setX(x);
         begin.setY(y);
     }
+    public int[] getEndXY() {
+        return end.getXY();
+    }
+    public void setEndXY(int x, int y){
+        end.setX(x);
+        end.setY(y);
+    }
     public double getLength() {
         return begin.distance(end);
     }
     public double getGradient() {
         int xDiff = end.getX() - begin.getX();
         int yDiff = end.getY() - begin.getY();
-
-        if (xDiff == 0) {
-            throw new ArithmeticException("Gradient is undefined (vertical line)");
-        }
-        return (double) yDiff / xDiff;
+        return Math.atan2(yDiff, xDiff);
     }
-        @Override
+
+    @Override
         public String toString() {
             return "MyLine[begin=" + begin + ", end=" + end + "]";
 
