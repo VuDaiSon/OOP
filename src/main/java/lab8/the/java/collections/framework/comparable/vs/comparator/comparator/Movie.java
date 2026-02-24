@@ -1,4 +1,4 @@
-package lab8.the.java.collections.framework.comparable.vs.comparator;
+package lab8.the.java.collections.framework.comparable.vs.comparator.comparator;
 
 public class Movie implements Comparable<Movie> {
 
@@ -6,47 +6,36 @@ public class Movie implements Comparable<Movie> {
     private double rating;
     private int year;
 
-    /**
-     * Used to sort movies by year
-     */
+    // Used to sort movies by year
     @Override
     public int compareTo(Movie movie) {
-        // TODO
-        // Compare this.year with movie.year
+        // TODO: compare by year
         return this.year - movie.year;
     }
 
-    /**
-     * Constructor
-     */
+    // Constructor
     public Movie(String name, double rating, int year) {
         // TODO
-        this.name = name;
+        this.name=name;
         this.rating = rating;
         this.year = year;
     }
 
-    /**
-     * Getter for rating
-     */
+    // Getter for rating
     public double getRating() {
         // TODO
-        return this.rating;
+        return rating;
     }
 
-    /**
-     * Getter for name
-     */
+    // Getter for name
     public String getName() {
         // TODO
-        return this.name;
+        return name;
     }
 
-    /**
-     * Getter for year
-     */
+    // Getter for year
     public int getYear() {
         // TODO
-        return this.year;
+        return year;
     }
 }

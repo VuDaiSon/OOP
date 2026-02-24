@@ -1,4 +1,4 @@
-package lab8.the.java.collections.framework.comparable.vs.comparator;
+package lab8.the.java.collections.framework.comparable.vs.comparator.comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
