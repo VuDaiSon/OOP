@@ -24,7 +24,7 @@ public class MyArrayList extends MyAbstractList{
 
     @Override
     public int size() {
-        return elements.length;
+        return size;
     }
 
     @Override
