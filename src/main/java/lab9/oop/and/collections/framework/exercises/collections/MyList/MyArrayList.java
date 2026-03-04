@@ -1,4 +1,4 @@
-package lab9.oop.and.collections.framework.exercises.collections;
+package lab9.oop.and.collections.framework.exercises.collections.MyList;
 
 public class MyArrayList extends MyAbstractList{
     public final int INITIAL_SIZE=16;
@@ -29,6 +29,7 @@ public class MyArrayList extends MyAbstractList{
 
     @Override
     public Object get(int index) {
+        checkBoundaries(index,size-1);
         return elements[index];
     }
 
@@ -47,11 +48,13 @@ public class MyArrayList extends MyAbstractList{
 
     @Override
     public void remove(int index) {
-        checkBoundaries(index, size);
-        for(int i = size; i>index;i--){
-            elements[i] = elements[i+1];
+        checkBoundaries(index, size - 1);
+
+        for(int i = index; i < size - 1; i++){
+            elements[i] = elements[i + 1];
         }
-        elements[index] = null;
+
+        elements[size - 1] = null;
         size--;
     }
 }

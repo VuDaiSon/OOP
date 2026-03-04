@@ -1,4 +1,4 @@
-package lab9.oop.and.collections.framework.exercises.collections;
+package lab9.oop.and.collections.framework.exercises.collections.MyList;
 
 public class MyLinkedList extends MyAbstractList{
     int size;
@@ -44,13 +44,15 @@ public class MyLinkedList extends MyAbstractList{
 
     @Override
     public void remove(int index) {
-        checkBoundaries(index, size);
+        checkBoundaries(index, size-1);
         MyLinkedListNode current = head;
-        for (int i = 0; i < index; i++) ;
-        {
-            current = current.next;
+        if(index==0){
+            head = head.next;
+        }else{
+            MyLinkedListNode prev = getNodeByIndex(index-1);
+            prev.setNext(prev.getNext().getNext());
         }
-        current.payload = null;
+        size--;
     }
 
     @Override

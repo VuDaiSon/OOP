@@ -1,4 +1,4 @@
-package lab9.oop.and.collections.framework.exercises.collections;
+package lab9.oop.and.collections.framework.exercises.collections.MyList;
 
 public abstract class MyAbstractList implements MyList{
     public MyAbstractList() {
