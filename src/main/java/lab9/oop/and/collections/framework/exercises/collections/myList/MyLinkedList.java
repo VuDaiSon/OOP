@@ -1,4 +1,4 @@
-package lab9.oop.and.collections.framework.exercises.collections.MyList;
+package lab9.oop.and.collections.framework.exercises.collections.myList;
 
 public class MyLinkedList extends MyAbstractList{
     int size;

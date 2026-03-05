@@ -1,4 +1,4 @@
-package lab9.oop.and.collections.framework.exercises.collections.PhoneBook;
+package lab9.oop.and.collections.framework.exercises.collections.phoneBook;
 
 public class TestApp {
     public static void main(String[] args) {
