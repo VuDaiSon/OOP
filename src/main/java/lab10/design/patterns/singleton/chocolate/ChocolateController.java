@@ -1,4 +1,4 @@
-package lab10.design.patterns;
+package lab10.design.patterns.singleton.chocolate;
 
 public class ChocolateController {
     public static void main(String[] args) {
